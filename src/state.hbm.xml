@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="max.controller.StateBean" table="state10">
+		<id name="state_code" type="string">
+			<column name="state_code" />
+			<generator class="native" />
+		</id>
+
+		<property name="state_name" type="string" column="state_name" length="45"
+			not-null="true" />
+		<property name="state_short_name" type="string" column="state_short_name"
+			length="30" not-null="true" />
+
+	</class>
+
+</hibernate-mapping>
